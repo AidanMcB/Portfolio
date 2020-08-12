@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {useHistory} from 'react-router-dom'
 // Styles 
 import {
     Header,
@@ -11,16 +11,16 @@ import {
 
 export default function NavBar() {
 
+    const history = useHistory()
 
     return (
-        <Segment className="navbar-Segment">
             <Menu className="navbar-Menu" >
                 <Container>
-                    <Menu.Item as='a'>About</Menu.Item>
-                    <Menu.Item as='a'>Projects</Menu.Item>
-                    <Menu.Item as='a'>Contact</Menu.Item>
+                    <Menu.Item as='a' onClick={() => history.push('/')}>Home</Menu.Item>
+                    <Menu.Item as='a' onClick={() => history.push('/resume')}>Resume</Menu.Item>
+                    <Menu.Item as='a' onClick={()=> history.push('/projects')}>Projects</Menu.Item>
+                    <Menu.Item as='a' onClick={() => history.push('/contact')}>Contact</Menu.Item>
                 </Container>
             </Menu>
-        </Segment>
     )
 }

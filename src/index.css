@@ -13,13 +13,12 @@ code {
 }
 
 /* Style The NavBar */
- .navbar-Segment{
-  color: white;
-  min-height: 700; 
-  padding: 1.75em 0em;
-  /* vertical */
-}  
+.spacer{
+  height: 3.75em;
+}
 .navbar-Menu{
+  min-height: 700;
+  padding: 1.75 0em;
   position: fixed;
   overflow:hidden;
   background-color: #333;
@@ -36,7 +35,20 @@ code {
   text-decoration: none;
 }
 .navbar-Menu a:hover{
-  background: #ddd;
-  color: black;
+  color: gray;
 }
-
+/* Main Page */
+.bg-img-container{
+  margin-top: 3em;
+  text-align: center;
+}
+.bg-img{
+  width: 100%;
+}
+.main{
+  background-color:rgba(0,0,0,0.2);
+}
+.hi-header{
+  font-weight: 700;
+  text-align:center;
+}
