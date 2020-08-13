@@ -43,7 +43,7 @@ export default function HomePage() {
                 <ul className="footer-list">
                     <li><a href="https://github.com/AidanMcB">GitHub</a></li>
                     <li><a href="https://www.youtube.com/channel/UCO5m40AxTx4AuitZQGx3Q4w?">YouTube</a></li>
-                    <li><a href="https://www.linkedin.com/in/aidan-mcbride-52b6261a9/">Linkedin</a></li>
+                    <li><a href="#">Blog</a></li>
                 </ul>
             </div>
         </div>

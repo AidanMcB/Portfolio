@@ -66,10 +66,22 @@ code {
 }
 .profile-pic{
   border-radius: 25px;
+  border: 1px solid black;
+  box-shadow: 5px 5px;
+  border-radius: 25px;
   height: 100%;
   width: 80%;
 }
+.about-me-header{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
 .about-me{
+  border-radius: 25px;
+  border: 1px solid black;
+  box-shadow: 5px 5px;
+  background-color: rgba(0,0,0,0.1);
   width: 40%;
   display: inline-block;
   /* margin: 50px; */
@@ -103,4 +115,36 @@ a {
 }
 .footer-list a:visited{
   text-decoration: none;
+}
+
+/* Contact Page */
+.contact-header{
+  text-align: center;
+}
+.contact-div{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin: 40px;
+}
+.email-div{
+  border-radius: 50px;
+  background-color: red;
+  padding: 20px;
+  height: 60px;
+  width: 60px;
+}
+.phone-div{
+  border-radius: 50px;
+  background-color: red;
+  padding: 20px;
+  height: 60px;
+  width: 60px;
+}
+.linkedin-div{
+  border-radius: 50px;
+  background-color: red;
+  padding: 20px;
+  height: 60px;
+  width: 60px;
 }
