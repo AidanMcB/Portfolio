@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom'
 // Styles 
 import {
@@ -14,13 +14,13 @@ export default function NavBar() {
     const history = useHistory()
 
     return (
-            <Menu className="navbar-Menu" >
-                <Container>
+        <Segment inverted>
+            <Menu inverted secondary className="navbar-Menu" >
                     <Menu.Item as='a' onClick={() => history.push('/')}>Home</Menu.Item>
                     <Menu.Item as='a' onClick={() => history.push('/resume')}>Resume</Menu.Item>
                     <Menu.Item as='a' onClick={()=> history.push('/projects')}>Projects</Menu.Item>
                     <Menu.Item as='a' onClick={() => history.push('/contact')}>Contact</Menu.Item>
-                </Container>
             </Menu>
+        </Segment>
     )
 }

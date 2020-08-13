@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 // Images
 import BGimg from '../assets/codeComp.jpg'
 import ProfPic from '../assets/profile-pic.jpeg'
+import coffeeCode from '../assets/coffeeCode.jpg'
 // Components 
 import NavBar from './NavBar'
 // Styles 
@@ -24,12 +25,9 @@ import {
 export default function HomePage() {
 
     return (
-        <div className="home-page">
-            <div className="bg-img-container" >
-                <img className="bg-img" src={BGimg} alt="computer header image"/>
-            </div>
-            <h1 className="hi-header">Aidan McBride</h1>
-            <h3 className="hi-header">Web Developer</h3>
+        <Container className="home-page">
+            <Header as="h1" className="hi-header">Aidan McBride</Header>
+            <Header as="h2" className="hi-header">Web Developer</Header>
             <div className="align-pic-about">
             <div className="profile-pic-container">
                 <img className="profile-pic" src={ProfPic} alt="profile picture" />
@@ -46,6 +44,6 @@ export default function HomePage() {
                     <li><a href="https://medium.com/@aidankmcbride">Blog</a></li>
                 </ul>
             </div>
-        </div>
+        </Container>
     )
 }

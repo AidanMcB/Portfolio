@@ -1,0 +1,147 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  /* Navbar */
+div.navbar-Menu{
+
+}
+  /* Main Page */
+  .home-page{
+  
+  }
+  .align-pic-about{
+    text-align: center;
+    padding: 10px;
+  }
+  .bg-img-container{
+    margin-top: 3em;
+    margin: auto;
+    text-align: center;
+  }
+  .bg-img{
+    width: 100vw;
+    height: 20vh;
+  }
+  .main{
+    /* background-color:rgba(0,0,0,0.8); */
+    width:100vw;
+    height: 100vh;
+    background-image: url('./assets/coffeeCode.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .hi-header{
+    font-weight: 700;
+    text-align:center;
+  }
+  .profile-pic-container{
+    display: inline-block;
+    text-align: center;
+    height: 350px;
+    width: 350px;
+    margin-right: auto;
+  }
+  .profile-pic{
+    border-radius: 25px;
+    border: 1px solid black;
+    box-shadow: 5px 5px;
+    border-radius: 25px;
+    height: 100%;
+    width: 80%;
+  }
+  .about-me-header{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .about-me{
+    border-radius: 25px;
+    border: 1px solid black;
+    box-shadow: 5px 5px;
+    background-color: rgba(255,255,255,0.25);
+    width: 40%;
+    display: inline-block;
+    /* margin: 50px; */
+    line-height: 1.6;
+    vertical-align: top;
+  }
+  
+  /* Footer */
+  a {
+    text-decoration: none !important
+  }
+  .footer{
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    width: 100%;
+  }
+  .footer-list{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-list li{
+    padding-right: 25px;
+    list-style-type: none;
+  }
+  .footer-list a:link, a:visited{
+    color: #f2f2f2;
+  }
+  .footer-list a:hover{
+   color: gray
+  }
+  .footer-list a:visited{
+    text-decoration: none;
+  }
+  
+  /* Contact Page */
+  .contact-header{
+    text-align: center;
+  }
+  .contact-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 40px;
+  }
+  .email-div{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50px;
+    background-color: red;
+    padding: 20px;
+    height: 60px;
+    width: 60px;
+  }
+  .phone-div{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50px;
+    background-color: red;
+    padding: 20px;
+    height: 60px;
+    width: 60px;
+  }
+  .linkedin-div{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50px;
+    background-color: red;
+    padding: 20px;
+    height: 60px;
+    width: 60px;
+  }
