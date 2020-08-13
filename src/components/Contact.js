@@ -7,11 +7,13 @@ import {
     Header,
     Button,
     Label,
-    Icon
+    Icon,
+    Popup
 } from 'semantic-ui-react';
 
 export default function Contact() {
 
+    
 
     return (
         <Container>
@@ -22,19 +24,18 @@ export default function Contact() {
             </div>
             <div className="contact-div">
                 <div className="email-div">
-                    <Header>Email</Header>
-                    <a href="mailto: aidankmcbride@gmail.com">aidankmcbride@gmail.com</a>
+                    <Header><a className="email-link" href="mailto: aidankmcbride@gmail.com">Email</a></Header>
                 </div>
-                <div className="phone-div">
-                    <Header>Phone</Header>
-                    <a>732-606-6416</a>
-                </div>
-                <div className="linkedin-div">
-                    <Header>Linkedin</Header>
-                    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="aidan-mcbride-52b6261a9">
-                        <a class="LI-simple-link" href='https://www.linkedin.com/in/aidan-mcbride-52b6261a9?trk=profile-badge'>Aidan McBride</a>
-                    </div>
-                </div>
+                <Popup content="732 606 6416" className="phone-popup" trigger={
+                    <div className="phone-div">
+                        {/* <Header>Phone</Header> */}
+                        <a className="phone-link">Phone</a> 
+                    </div> } />
+                <Popup content={<div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="aidan-mcbride-52b6261a9"/>} 
+                className="linkedin-popup" trigger={
+                    <div className="linkedin-div">
+                        <Header><a className="linkedin-link" href='https://www.linkedin.com/in/aidan-mcbride-52b6261a9?trk=profile-badge'>Linkedin</a></Header>
+                    </div> } />
             </div>
         </Container>
     )
