@@ -17,24 +17,27 @@ export default function Contact() {
     
 
     return (
-        <Container>
+        <Container className="contact-page">
             <div className="contact-header">
-                <Header>Want to get in touch?</Header>
+                <Header style={{
+                    color:"white",
+                    marginTop:"40px",
+                    textShadow:"2px 2px black",
+                    fontSize: "32px"
+                }} as="h1">Want to get in touch?</Header>
             </div>
             <div className="contact-div">
                 <div className="email-div">
-                    <Header><a className="email-link" href="mailto: aidankmcbride@gmail.com">Email</a></Header>
+                    <a className="email-link" href="mailto: aidankmcbride@gmail.com"><Icon name="mail" size="huge" color='red'></Icon></a>
                 </div>
                 <Popup content="732 606 6416" className="phone-popup" trigger={
                     <div className="phone-div">
-                        {/* <Header>Phone</Header> */}
-                        <a className="phone-link">Phone</a> 
+                        <Icon name="phone" size="huge" color='green'></Icon>
                     </div> } />
                     <div className="linkedin-div">
-                        <Header><a className="linkedin-link" href='https://www.linkedin.com/in/aidan-mcbride-52b6261a9?trk=profile-badge'><Icon className="L-icon" size='huge' name='linkedin' /></a></Header>
+                    <a className="linkedin-link" href='https://www.linkedin.com/in/aidan-mcbride-52b6261a9?trk=profile-badge'>&nbsp;&nbsp;&nbsp;<Icon className="L-icon" size='huge' name='linkedin' /></a>
                     </div> 
             </div>
-            <Footer />
         </Container>
     )
 }

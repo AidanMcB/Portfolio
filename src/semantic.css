@@ -95,6 +95,9 @@ div.navbar-Menu{
   }
   
   /* Contact Page */
+  .contact-page{
+    height: 100vh;
+  }
   .contact-header{
     text-align: center;
   }
@@ -109,20 +112,14 @@ div.navbar-Menu{
     display: flex;
     justify-content: center;
     align-items:center;
-    border-radius: 75px;
+    border-radius: 150px;
     padding: 20px;
-    height: 110px;
-    width: 110px;
+    height: 250px;
+    width: 250px;
   }
   .L-icon{
-    color: blue;
-    margin-left: 10px;
+    color: rgb(0,114,177);
+    margin-left: 40px;
   }
-  .linkedin-link{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+ 
   
