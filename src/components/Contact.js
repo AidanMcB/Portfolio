@@ -1,5 +1,6 @@
 import React from 'react';
-
+// Components
+import Footer from './Footer'
 // Styles 
 import {
     Container,
@@ -17,9 +18,7 @@ export default function Contact() {
 
     return (
         <Container>
-            <Segment className="spacer" />
             <div className="contact-header">
-                <Header>Contact Info</Header>
                 <Header>Want to get in touch?</Header>
             </div>
             <div className="contact-div">
@@ -31,12 +30,11 @@ export default function Contact() {
                         {/* <Header>Phone</Header> */}
                         <a className="phone-link">Phone</a> 
                     </div> } />
-                <Popup content={<div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="aidan-mcbride-52b6261a9"/>} 
-                className="linkedin-popup" trigger={
                     <div className="linkedin-div">
-                        <Header><a className="linkedin-link" href='https://www.linkedin.com/in/aidan-mcbride-52b6261a9?trk=profile-badge'>Linkedin</a></Header>
-                    </div> } />
+                        <Header><a className="linkedin-link" href='https://www.linkedin.com/in/aidan-mcbride-52b6261a9?trk=profile-badge'><Icon className="L-icon" size='huge' name='linkedin' /></a></Header>
+                    </div> 
             </div>
+            <Footer />
         </Container>
     )
 }

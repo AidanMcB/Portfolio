@@ -16,10 +16,10 @@ export default function NavBar() {
     return (
         <Segment inverted>
             <Menu inverted secondary className="navbar-Menu" >
-                    <Menu.Item as='a' onClick={() => history.push('/')}>Home</Menu.Item>
-                    <Menu.Item as='a' onClick={() => history.push('/resume')}>Resume</Menu.Item>
-                    <Menu.Item as='a' onClick={()=> history.push('/projects')}>Projects</Menu.Item>
-                    <Menu.Item as='a' onClick={() => history.push('/contact')}>Contact</Menu.Item>
+                <Menu.Item as='a' onClick={() => history.push('/')}>Home</Menu.Item>
+                <Menu.Item as='a' onClick={() => history.push('/resume')}>Resume</Menu.Item>
+                <Menu.Item as='a' onClick={()=> history.push('/projects')}>Projects</Menu.Item>
+                <Menu.Item as='a' onClick={() => history.push('/contact')}>Contact</Menu.Item>
             </Menu>
         </Segment>
     )

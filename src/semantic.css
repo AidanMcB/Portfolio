@@ -22,26 +22,19 @@ div.navbar-Menu{
   }
   .align-pic-about{
     text-align: center;
-    padding: 10px;
+    padding: 30px;
   }
-  .bg-img-container{
-    margin-top: 3em;
-    margin: auto;
-    text-align: center;
-  }
-  .bg-img{
-    width: 100vw;
-    height: 20vh;
-  }
+  
   .main{
     /* background-color:rgba(0,0,0,0.8); */
     width:100vw;
-    height: 100vh;
+    height: 100%;
     background-image: url('./assets/coffeeCode.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .hi-header{
+ .hi-header{
+    color: rgba(255,255,255,0.85) !important;
     font-weight: 700;
     text-align:center;
   }
@@ -60,20 +53,17 @@ div.navbar-Menu{
     height: 100%;
     width: 80%;
   }
-  .about-me-header{
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
   .about-me{
+    padding: 40px;
     border-radius: 25px;
     border: 1px solid black;
     box-shadow: 5px 5px;
-    background-color: rgba(255,255,255,0.25);
-    width: 40%;
+    background-color: rgba(255,255,255,0.65);
+    width: 60%;
     display: inline-block;
-    /* margin: 50px; */
+    margin: 50px;
     line-height: 1.6;
+    font-size: 18px;
     vertical-align: top;
   }
   
@@ -82,27 +72,26 @@ div.navbar-Menu{
     text-decoration: none !important
   }
   .footer{
-    display: flex;
-    justify-content: center;
-    background-color: #333;
+    position: relative;
+    left: 0;
+    right: 0;   
+    bottom: 2em;  
     width: 100%;
   }
   .footer-list{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
   .footer-list li{
-    padding-right: 25px;
-    list-style-type: none;
+
   }
   .footer-list a:link, a:visited{
     color: #f2f2f2;
   }
   .footer-list a:hover{
-   color: gray
+   
   }
   .footer-list a:visited{
-    text-decoration: none;
   }
   
   /* Contact Page */
@@ -115,33 +104,25 @@ div.navbar-Menu{
     padding: 30px;
     margin: 40px;
   }
-  .email-div{
+  .email-div, .phone-div, .linkedin-div{
+    background-color: rgba(255,255,255,0.65);
     display: flex;
     justify-content: center;
     align-items:center;
-    border-radius: 50px;
-    background-color: red;
+    border-radius: 75px;
     padding: 20px;
-    height: 60px;
-    width: 60px;
+    height: 110px;
+    width: 110px;
   }
-  .phone-div{
+  .L-icon{
+    color: blue;
+    margin-left: 10px;
+  }
+  .linkedin-link{
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items:center;
-    border-radius: 50px;
-    background-color: red;
-    padding: 20px;
-    height: 60px;
-    width: 60px;
   }
-  .linkedin-div{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    border-radius: 50px;
-    background-color: red;
-    padding: 20px;
-    height: 60px;
-    width: 60px;
-  }
+  
