@@ -3,6 +3,7 @@ import React from 'react';
 import Footer from './Footer'
 // Styles 
 import {
+    Reveal,
     Container,
     Segment,
     Header,
@@ -30,7 +31,8 @@ export default function Contact() {
                 <div className="email-div">
                     <a className="email-link" href="mailto: aidankmcbride@gmail.com"><Icon name="mail" size="huge" color='red'></Icon></a>
                 </div>
-                <Popup content="732 606 6416" className="phone-popup" trigger={
+                <Popup content="732 606 6416" className="phone-popup" 
+                size="huge" position="bottom center" trigger={
                     <div className="phone-div">
                         <Icon name="phone" size="huge" color='green'></Icon>
                     </div> } />
