@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
 // Images
-import BGimg from '../assets/codeComp.jpg'
 import ProfPic from '../assets/profile-pic.jpeg'
 import coffeeCode from '../assets/coffeeCode.jpg'
 // Components 

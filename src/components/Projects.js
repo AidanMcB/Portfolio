@@ -1,7 +1,8 @@
 import React from 'react';
 // Images
 import weatherAppImg from '../assets/mosi-knife.jpg'
-
+import ddBG from '../assets/d&dbackground.jpg'
+import todaysMealImg from '../assets/todays-meal.png'
 // Styles 
 import {
     Grid,
@@ -40,18 +41,30 @@ export default function Projects() {
             </Grid.Column>
             <Grid.Column>
                 <Card className="d&d-dice-app" onClick={() => window.location="https://aidanmcb.github.io/DandDDiceApp/" }>
-                <Image src={weatherAppImg} wrapped></Image>
+                <Image src={ddBG} wrapped></Image>
                     <Card.Content>
                         <Card.Header>Dungeons and Dragons Dice Roller</Card.Header>
                         <Card.Meta>HTML, CSS, JavaScript</Card.Meta>
                         <Card.Description>
                             Roll six different types of dice or convert any of the currencies coinciding with the popular board game, Dungeons and Dragons. Includes a simple calculator.
                         </Card.Description>                 
-
+                    </Card.Content>
+                </Card>
+            </Grid.Column>
+            <Grid.Column>
+                <Card className="todays-meal-app" onClick={() => window.location="https://todays-meal.herokuapp.com/" }>
+                <Image src={todaysMealImg} wrapped></Image>
+                    <Card.Content>
+                        <Card.Header>Today's Meal</Card.Header>
+                        <Card.Meta>Ruby on Rails, CSS</Card.Meta>
+                        <Card.Description>
+                            Browse delicious recipes online to spice up your cooking repertoire. Create your own profile and upload your own recipes to share with the world!
+                        </Card.Description>                 
                     </Card.Content>
                 </Card>
             </Grid.Column>
                 </Grid.Row>
+            {/* Three per row, start next row here */}
             </Grid>
         </Container>
     )

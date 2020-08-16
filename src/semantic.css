@@ -1,11 +1,16 @@
 body {
     width: 100%;
+    height: 100%;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  html{
+    width: 100%;
+    height: 100%;
   }
   
   code {
@@ -27,7 +32,7 @@ div.navbar-Menu{
   
   .main{
     /* background-color:rgba(0,0,0,0.8); */
-    width:100vw;
+    width:100%;
     height: 100%;
     background-image: url('./assets/coffeeCode.jpg');
     background-size: cover;
@@ -151,6 +156,51 @@ div.navbar-Menu{
     padding: 20px;
    
 }
+/* Resume */
+.resume-page{
+  height: 100vh;
+}
+/* Software */
+.software-container{
+  padding: 40px;
+  border-radius: 25px;
+  border: 1px solid black;
+  box-shadow: 5px 5px;
+  background-color: rgba(255,255,255,0.65);
+  width: 60%;
+  display: inline-block;
+  margin: 50px;
+  line-height: 1.6;
+  font-size: 18px;
+  vertical-align: top;
+}
+.methodologies-container{
+  padding: 40px;
+  border-radius: 25px;
+  border: 1px solid black;
+  box-shadow: 5px 5px;
+  background-color: rgba(255,255,255,0.65);
+  width: 60%;
+  display: inline-block;
+  margin: 50px;
+  line-height: 1.6;
+  font-size: 18px;
+  vertical-align: top;
+}
+.softskills-container{
+  padding: 40px;
+  border-radius: 25px;
+  border: 1px solid black;
+  box-shadow: 5px 5px;
+  background-color: rgba(255,255,255,0.65);
+  width: 60%;
+  display: inline-block;
+  margin: 50px;
+  line-height: 1.6;
+  font-size: 18px;
+  vertical-align: top;
+}
+
 
  
   
