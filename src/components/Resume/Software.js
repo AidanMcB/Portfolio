@@ -16,7 +16,7 @@ export default function Software() {
         'Ruby on Rails', 'Semantic-UI/ Semantic-UI-React', 'Sinatra', 'Software Development', 'SQL',
         'SQLite', 'Trello', 'Version Control', 'Webpack', 'Web Development', 'Web Applications']
 
-    const skillsList = softwareSkills.map( skill => <List.Item>{skill}</List.Item>) 
+    const skillsList = softwareSkills.map( (skill, index) => <List.Item key={index}>{skill}</List.Item>) 
     return(
         <Container className="software-container">
         <Header>Programming Languages / Software </Header>

@@ -14,7 +14,7 @@ export default function SoftSkills(){
         'Collaborative Problem Solving', 'Technical Coach', 'Written and Verbal Communication',
         'Leadership', 'Time Management']
 
-    const softSkillsList = softSkills.map( skill => <List.Item>{skill}</List.Item>)
+    const softSkillsList = softSkills.map( (skill, index) => <List.Item key={index}>{skill}</List.Item>)
 
     return(
         <Container className="softskills-container">

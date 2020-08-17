@@ -13,7 +13,7 @@ export default function Methodologies () {
     'MVC', 'REST API', 'Technical Writing', 'Debugging', 'Solutions', 'Customer Needs',
     'Troubleshooting']
 
-    const methodologiesSkills = methodologies.map( method => <List.Item>{method}</List.Item>)
+    const methodologiesSkills = methodologies.map( (method, index) => <List.Item key={index}>{method}</List.Item>)
 
     return(
         <Container className="methodologies-container">

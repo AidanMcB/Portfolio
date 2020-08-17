@@ -159,47 +159,29 @@ div.navbar-Menu{
 /* Resume */
 .resume-page{
   height: 100vh;
+  /* display: flex;
+  align-items: center; */
 }
 /* Software */
-.software-container{
-  padding: 40px;
+.software-container,
+ .methodologies-container,
+  .softskills-container,
+  .education-container,
+  .employment-container{
+  padding: 20px;
   border-radius: 25px;
   border: 1px solid black;
   box-shadow: 5px 5px;
   background-color: rgba(255,255,255,0.65);
   width: 60%;
   display: inline-block;
-  margin: 50px;
+  margin: 20px;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 14px;
   vertical-align: top;
 }
-.methodologies-container{
-  padding: 40px;
-  border-radius: 25px;
-  border: 1px solid black;
-  box-shadow: 5px 5px;
-  background-color: rgba(255,255,255,0.65);
-  width: 60%;
-  display: inline-block;
-  margin: 50px;
-  line-height: 1.6;
-  font-size: 18px;
-  vertical-align: top;
-}
-.softskills-container{
-  padding: 40px;
-  border-radius: 25px;
-  border: 1px solid black;
-  box-shadow: 5px 5px;
-  background-color: rgba(255,255,255,0.65);
-  width: 60%;
-  display: inline-block;
-  margin: 50px;
-  line-height: 1.6;
-  font-size: 18px;
-  vertical-align: top;
-}
+
+
 
 
  
