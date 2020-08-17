@@ -25,11 +25,11 @@ export default function EmploymentHistory() {
     }
     return (
         <Container className="employment-container">
-            <Header>Employment History</Header>
+            <Header as="h2" >Employment History</Header>
             <Accordion>
                 <Accordion.Title
                     style={{ fontWeight: "bold" }}
-                    exlusive={false}
+                    exlusive={"false"}
                     onClick={cpClick}>
                     <Icon name="dropdown" />
                     Cedar Post Farm Market
@@ -48,7 +48,7 @@ export default function EmploymentHistory() {
             <Accordion>
                 <Accordion.Title
                     style={{ fontWeight: "bold" }}
-                    exlusive={false}
+                    exlusive={"false"}
                     onClick={kerbeyClick}>
                     <Icon name="dropdown" />
                     Kerbey Lane
@@ -66,7 +66,7 @@ export default function EmploymentHistory() {
             <Accordion>
                 <Accordion.Title
                     style={{ fontWeight: "bold" }}
-                    exlusive={false}
+                    exlusive={"false"}
                     onClick={mtmsClick}>
                     <Icon name="dropdown" />
                     Manchester Board of Education

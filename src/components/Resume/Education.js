@@ -15,7 +15,7 @@ export default function Education(){
 
     return(
         <Item.Group className="education-container">
-            <Header as="h3">Education</Header>
+            <Header as="h2">Education</Header>
             <Item>
                 <Item.Image size='tiny' src={FIlogo} />
                 <Item.Content>

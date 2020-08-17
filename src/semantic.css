@@ -25,6 +25,15 @@ div.navbar-Menu{
   .home-page{
   
   }
+  .footer-links{
+    margin-top: -4em;
+    text-align: center;
+  }
+  .github-icon,
+  .youtube-icon,
+  .medium-icon{
+    display:flex;
+  }
   .align-pic-about{
     text-align: center;
     padding: 30px;
@@ -158,27 +167,40 @@ div.navbar-Menu{
 }
 /* Resume */
 .resume-page{
-  height: 100vh;
+  height: 130vh;
   /* display: flex;
   align-items: center; */
 }
 /* Software */
 .software-container,
  .methodologies-container,
-  .softskills-container,
-  .education-container,
-  .employment-container{
+  .softskills-container{
   padding: 20px;
   border-radius: 25px;
   border: 1px solid black;
   box-shadow: 5px 5px;
   background-color: rgba(255,255,255,0.65);
-  width: 60%;
+  width: 100%;
   display: inline-block;
   margin: 20px;
   line-height: 1.6;
   font-size: 14px;
   vertical-align: top;
+}
+.education-container,
+.employment-container{
+  padding: 20px;
+  border-radius: 25px;
+  border: 1px solid black;
+  box-shadow: 5px 5px;
+  background-color: rgba(255,255,255,0.65);
+  width: 100%;
+  /* display: inline-block; */
+  /* margin: 20px; */
+  line-height: 1.6;
+  font-size: 14px;
+  /* vertical-align: top; */
+
 }
 
 
