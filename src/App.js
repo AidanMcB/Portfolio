@@ -5,12 +5,12 @@ import './App.css';
 import {
   Segment
 } from 'semantic-ui-react'
-// import 'semantic-ui-css/semantic.min.css'
+import 'semantic-ui-css/semantic.min.css'
 // Components
 import HomePage from './components/HomePage'
 // -NavBar
 import NavBar from './components/NavBar'
-import Resume from './components/Resume'
+import Resume from './components/Resume/Resume'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
 
