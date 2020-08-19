@@ -1,0 +1,3 @@
+*** Center grid in projects page 
+*** Add more projects
+*** Consider resizing home page 
