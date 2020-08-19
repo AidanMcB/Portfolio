@@ -44,9 +44,9 @@ export default function HomePage() {
                 </div>
             </div>
             <Container className="footer-links">
-                <Icon className="github-icon" name="github" size="huge" color="white"/>
-                <Icon className="youtube-icon" name="youtube" size="huge" color="red" />
-                <Icon className="medium-icon" name="medium" size="huge" color="white" />
+                <Icon onClick={() => window.location='https://github.com/AidanMcB'} className="github-icon" name="github" size="huge" color="white"/>
+                <Icon onClick={() => window.location="https://www.youtube.com/channel/UCO5m40AxTx4AuitZQGx3Q4w/videos?"} className="youtube-icon" name="youtube" size="huge" color="red" />
+                <Icon onClick={() => window.location="https://medium.com/@aidankmcbride"} className="medium-icon" name="medium" size="huge" color="white" />
             </Container>
         </Container>
     )

@@ -26,13 +26,19 @@ div.navbar-Menu{
   
   }
   .footer-links{
-    margin-top: -4em;
+    margin-top: -1em;
     text-align: center;
   }
   .github-icon,
   .youtube-icon,
   .medium-icon{
     display:flex;
+    padding-bottom: 1.5em;
+  }
+  .github-icon:hover,
+  .youtube-icon:hover,
+  .medium-icon:hover{
+    cursor: pointer;
   }
   .align-pic-about{
     text-align: center;
@@ -68,14 +74,14 @@ div.navbar-Menu{
     width: 80%;
   }
   .about-me{
-    padding: 40px;
+    padding: 30px;
     border-radius: 25px;
     border: 1px solid black;
     box-shadow: 5px 5px;
     background-color: rgba(255,255,255,0.65);
     width: 60%;
     display: inline-block;
-    margin: 50px;
+    margin: 0px;
     line-height: 1.6;
     font-size: 18px;
     vertical-align: top;
