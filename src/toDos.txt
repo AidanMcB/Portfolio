@@ -2,3 +2,4 @@
 *** Add more projects
 *** Consider resizing home page 
 *** Consider switching Navbar to sticky?
+*** Resume page moves strangly and background ?
