@@ -1,5 +1,6 @@
 import React from 'react';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 // Styles
 import './App.css';
 import {
@@ -20,13 +21,13 @@ import Projects from './components/Projects'
 function App() {
   return (
     <div className="main">
-    <BrowserRouter>
-      <NavBar className="navBar" />
-      <Route exact path="/" component={HomePage} />
-      <Route exact path="/resume" component={Resume} /> 
-      <Route exact path="/contact" component={Contact} /> 
-      <Route exact path="/projects" component={Projects} /> 
-    </BrowserRouter>
+      <BrowserRouter>
+        <NavBar className="navBar" />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/resume" component={Resume} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/projects" component={Projects} />
+      </BrowserRouter>
     </div>
   );
 }
