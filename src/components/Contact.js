@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect, useRef, createRef } from 'react';
 // Components
 import Footer from './Footer'
 // Styles 
@@ -14,8 +14,6 @@ import {
 } from 'semantic-ui-react';
 
 export default function Contact() {
-
-    
 
     return (
         <Container className="contact-page">
@@ -34,7 +32,7 @@ export default function Contact() {
                 <Popup content="732 606 6416" className="phone-popup" 
                 size="huge" position="bottom center" trigger={
                     <div className="phone-div">
-                        <Icon name="phone" size="huge" color='green'></Icon>
+                        <Icon name="phone" size="huge" color='green'/>
                     </div> } />
                     <div className="linkedin-div">
                     <a className="linkedin-link" href='https://www.linkedin.com/in/aidan-mcbride-52b6261a9?trk=profile-badge'>&nbsp;&nbsp;&nbsp;<Icon className="L-icon" size='huge' name='linkedin' /></a>
