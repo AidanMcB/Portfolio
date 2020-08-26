@@ -1,8 +1,11 @@
 body {
   width: 100%;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+   background-image: url('./assets/coffeeCode.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
   overflow-x: hidden; 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -54,11 +57,17 @@ div.navbar-Menu{
     /* background-color:rgba(0,0,0,0.8); */
     width:100%;
     height: 100%;
+    margin: 0 auto;
     background-image: url('./assets/coffeeCode.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
  .hi-header{
+    color: rgba(255,255,255,0.85) !important;
+    font-weight: 700;
+    text-align:center;
+  }
+  .hi-header2{
     color: rgba(255,255,255,0.85) !important;
     font-weight: 700;
     text-align:center;
@@ -77,16 +86,17 @@ div.navbar-Menu{
     border-radius: 25px;
     height: 100%;
     width: 80%;
+   
   }
   .about-me{
-    padding: 30px;
+    padding: 1em;
     border-radius: 25px;
     border: 1px solid black;
     box-shadow: 5px 5px;
     background-color: rgba(255,255,255,0.65);
-    width: 60%;
+    width: 70%;
     display: inline-block;
-    margin: 0px;
+    margin-top: -1em;
     line-height: 1.6;
     font-size: 18px;
     vertical-align: top;
@@ -155,37 +165,27 @@ div.navbar-Menu{
 .projects-page{
     height: 100vh;
     width: 100%;
+    margin: 0 auto;
+}
+.projects-grid{
     text-align: center;
     display: flex;
     justify-content: space-around;
-}
-.projects-grid{
-  text-align: center;
+ 
 }
 .projects-header{
     color: rgba(255,255,255,0.85) !important;
     font-weight: 700;
     text-align:center;
 }
-.weather-app-div{
-    background-color: rgba(255,255,255,0.65);
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    border-radius: 150px;
-    padding: 20px;
-    height: 250px;
-    width: 250px;
-}
-.weather-app-card{
-    align-items:center;
-    border-radius: 30px;
-    padding: 20px;
-   
+
+.weather-app-card, .dd-dice-card, .todays-meal-card{
+  
 }
 /* Resume */
 .resume-page{
-  height: 130vh;
+  height: 100%;
+  margin: 0 auto;
   /* display: flex;
   align-items: center; */
 }

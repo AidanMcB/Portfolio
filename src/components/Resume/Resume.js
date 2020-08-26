@@ -19,7 +19,7 @@ export default function Resume() {
     return (
         <Container className="resume-page">
             <Grid columns={2}>
-                <Grid.Row style={{alignItems:"center"}}>
+                <Grid.Row only="tablet computer" style={{alignItems:"center"}}>
                 <Grid.Column >
                         <Education />
                         <Employment />

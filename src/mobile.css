@@ -25,7 +25,6 @@
     }
     /* Navbar */
   div.navbar-Menu{
-  
   }
     /* Main Page */
     .home-page{
@@ -63,12 +62,17 @@
       color: rgba(255,255,255,0.85) !important;
       font-weight: 700;
       text-align:center;
+      margin-top: -4em;
+    }
+    .hi-header2{
+      color: rgba(255,255,255,0.85) !important;
+      font-weight: 700;
+      text-align:center;
+      margin-top: -4em;
     }
     .profile-pic-container{
       display: inline-block;
       text-align: center;
-      height: 350px;
-      width: 350px;
       margin-right: auto;
     }
     .profile-pic{
@@ -80,16 +84,16 @@
       width: 80%;
     }
     .about-me{
-      padding: 30px;
+      padding: 10px;
       border-radius: 25px;
       border: 1px solid black;
       box-shadow: 5px 5px;
       background-color: rgba(255,255,255,0.65);
-      width: 60%;
+      width: 100%;
       display: inline-block;
-      margin: 0px;
+      margin-top: -2em;
       line-height: 1.6;
-      font-size: 18px;
+      font-size: 14px;
       vertical-align: top;
     }
     
@@ -163,21 +167,14 @@
       font-weight: 700;
       text-align:center;
   }
-  .weather-app-div{
-      background-color: rgba(255,255,255,0.65);
-      display: flex;
-      justify-content: center;
-      align-items:center;
-      border-radius: 150px;
-      padding: 20px;
-      height: 250px;
-      width: 250px;
-  }
+  
   .weather-app-card{
       align-items:center;
       border-radius: 30px;
-      padding: 20px;
      
+  }
+  .card-content{
+    
   }
   /* Resume */
   .resume-page{
