@@ -49,14 +49,19 @@
       text-align: center;
       padding: 30px;
     }
-    
+    .app{
+        text-align: center;
+        background-image: url('./assets/coffeeCode.jpg');
+        position: fixed;
+        min-width:100%;
+        min-height:100%;
+        background-size: cover;
+        background-position: center;
+      }
     .main{
       /* background-color:rgba(0,0,0,0.8); */
       width:100%;
       height: 100%;
-      background-image: url('./assets/coffeeCode.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
     }
    .hi-header{
       color: rgba(255,255,255,0.85) !important;
@@ -177,8 +182,10 @@
     
   }
   /* Resume */
-  .resume-page{
-    height: 130vh;
+  html, body, .app, .app>.resume-page{
+    height: 100%;
+    margin: 0 auto;
+    background-size:cover; 
     /* display: flex;
     align-items: center; */
   }
@@ -186,32 +193,32 @@
   .software-container,
    .methodologies-container,
     .softskills-container{
-    padding: 20px;
-    border-radius: 25px;
-    border: 1px solid black;
-    box-shadow: 5px 5px;
-    background-color: rgba(255,255,255,0.65);
-    width: 100%;
-    display: inline-block;
-    margin: 20px;
-    line-height: 1.6;
-    font-size: 14px;
-    vertical-align: top;
+    visibility:hidden;
+   display:none;
   }
   .education-container,
   .employment-container{
-    padding: 20px;
-    border-radius: 25px;
-    border: 1px solid black;
-    box-shadow: 5px 5px;
-    background-color: rgba(255,255,255,0.65);
-    width: 100%;
-    /* display: inline-block; */
-    /* margin: 20px; */
-    line-height: 1.6;
-    font-size: 14px;
-    /* vertical-align: top; */
-  
+   display:none;
+   visibility: hidden;
   }
+  .resume-container{
+    margin:auto;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .PDFDocument {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.PDFPage > canvas {
+    max-width: 100%;
+    height: auto !important;
+}
+  
+ 
+  
 
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 // Styles
 import './App.css';
@@ -12,12 +12,25 @@ import NavBar from './components/NavBar'
 import Resume from './components/Resume/Resume'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
-
+import bgImage from './assets/coffeeCode.jpg'
 
 function App() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  // const imageUrl = windowWidth >= 650 ? desktopImage : mobileImage;
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+    window.addEventListener('resizee', handleWindowResize)
+    return () => {
+      window.removeEventListener('resize', handleWindowResize)
+    }
+  }, []) //will only run on mount and unmount
+
   return (
-    <div className="main">
-      <BrowserRouter>
+    <div className="app">
+      <BrowserRouter className="router">
         <NavBar className="navBar" />
         <Route exact path="/" component={HomePage} />
         <Route exact path="/resume" component={Resume} />
