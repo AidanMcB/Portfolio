@@ -69,7 +69,7 @@ export default function Resume() {
                     </Document>
                 </Container>
             </MediaQuery>
-
+            <div><a className="resume-link" href={myResume} download>Download my resume</a></div>
         </Container>
     )
 }

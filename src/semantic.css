@@ -245,6 +245,18 @@ html, body, .app, .app>.resume-page{
   display:none;
   visibility: hidden; 
 }
+.resume-link{
+  text-align:center;
+  color:white;
+  font-size:2em;
+}
+.resume-container{
+  margin:auto;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 
