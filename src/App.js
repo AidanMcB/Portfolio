@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="app">
     <img className="bg" src={BGimage} />
-      <BrowserRouter className="router">
+      <BrowserRouter basename="/" className="router">
         <NavBar className="navBar" />
         <Route exact path="/" component={HomePage} />
         <Route exact path="/resume" component={Resume} />
