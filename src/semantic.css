@@ -16,25 +16,36 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: scroll; 
-    
   }
 
+  img.bg{
+      /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  }
   .main{
     background-color:rgba(0,0,0,0.8);
     width: 100%;
     height: 100vh;
     margin:0;
-    text-align: center;  
+    text-align: center; 
+    
   }
   .app{
     text-align: center;
-    background-image: url('./assets/coffeeCode.jpg');
     /* Full height */
     height: 100%; 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
   }
   .router{
     height: 100%;
@@ -45,9 +56,7 @@ body {
       monospace;
   }
   /* Navbar */
-div.navbar-Menu{
 
-}
   /* Main Page */
   .home-page{
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 // Images
 import ProfPic from '../assets/profile-pic.jpeg'
-import coffeeCode from '../assets/coffeeCode.jpg'
+import BGimage from '../assets/coffeeCode.jpg'
 // Components 
 import NavBar from './NavBar'
 import Footer from './Footer'
