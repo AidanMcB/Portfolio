@@ -1,0 +1,224 @@
+@media all and (max-width: 480px){
+    body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    html{
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; 
+    }
+    
+    code {
+      font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+    }
+    /* Navbar */
+  div.navbar-Menu{
+  }
+    /* Main Page */
+    .home-page{
+    
+    }
+    .footer-links{
+      margin-top: -1em;
+      text-align: center;
+    }
+    .github-icon,
+    .youtube-icon,
+    .medium-icon{
+      display:flex;
+      padding-bottom: 1.5em;
+    }
+    .github-icon:hover,
+    .youtube-icon:hover,
+    .medium-icon:hover{
+      cursor: pointer;
+    }
+    .align-pic-about{
+      text-align: center;
+      padding: 30px;
+    }
+    .app{
+        text-align: center;
+        background-image: url('./assets/coffeeCode.jpg');
+        position: fixed;
+        min-width:100%;
+        min-height:100%;
+        background-size: cover;
+        background-position: center;
+      }
+    .main{
+      /* background-color:rgba(0,0,0,0.8); */
+      width:100%;
+      height: 100%;
+    }
+   .hi-header{
+      color: rgba(255,255,255,0.85) !important;
+      font-weight: 700;
+      text-align:center;
+      margin-top: -4em;
+    }
+    .hi-header2{
+      color: rgba(255,255,255,0.85) !important;
+      font-weight: 700;
+      text-align:center;
+      margin-top: -4em;
+    }
+    .profile-pic-container{
+      display: inline-block;
+      text-align: center;
+      margin-right: auto;
+    }
+    .profile-pic{
+      border-radius: 25px;
+      border: 1px solid black;
+      box-shadow: 5px 5px;
+      border-radius: 25px;
+      height: 100%;
+      width: 80%;
+    }
+    .about-me{
+      padding: 10px;
+      border-radius: 25px;
+      border: 1px solid black;
+      box-shadow: 5px 5px;
+      background-color: rgba(255,255,255,0.65);
+      width: 100%;
+      display: inline-block;
+      margin-top: -2em;
+      line-height: 1.6;
+      font-size: 14px;
+      vertical-align: top;
+    }
+    
+    /* Footer */
+    a {
+      text-decoration: none !important
+    }
+    .footer{
+      position: relative;
+      left: 0;
+      right: 0;   
+      bottom: 2em;  
+      width: 100%;
+    }
+    .footer-list{
+      display: flex;
+      justify-content: space-around;
+    }
+    .footer-list li{
+  
+    }
+    .footer-list a:link, a:visited{
+      color: #f2f2f2;
+    }
+    .footer-list a:hover{
+     
+    }
+    .footer-list a:visited{
+    }
+    
+    /* Contact Page */
+    .contact-page{
+      height: 100vh;
+    }
+    .contact-header{
+        text-align: center;
+    }
+    .contact-div{
+      align-items: center;
+      flex-direction: column;
+      margin-top: 0em;
+    }
+    .email-div, .phone-div, .linkedin-div{
+      margin-top: 2em;
+      background-color: rgba(255,255,255,0.65);
+      border-radius: 10em; 
+      height: 10em; 
+      width: 10em;
+    }
+    .L-icon{
+      color: rgb(0,114,177);
+    }
+    .phone-popup{
+      border-radius: 0;
+      opacity: 0.7;
+      padding: 2em;
+    }
+    /* Projects Page */
+  .projects-page{
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+  }
+  .projects-grid{
+    text-align: center;
+  }
+  .projects-header{
+      color: rgba(255,255,255,0.85) !important;
+      font-weight: 700;
+      text-align:center;
+  }
+  
+  .weather-app-card{
+      align-items:center;
+      border-radius: 30px;
+     
+  }
+  .card-content{
+    
+  }
+  /* Resume */
+  html, body, .app, .app>.resume-page{
+    height: 100%;
+    margin: 0 auto;
+    background-size:cover; 
+    /* display: flex;
+    align-items: center; */
+  }
+  /* Software */
+  .software-container,
+   .methodologies-container,
+    .softskills-container{
+    visibility:hidden;
+   display:none;
+  }
+  .education-container,
+  .employment-container{
+   display:none;
+   visibility: hidden;
+  }
+  .resume-container{
+    margin:auto;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .PDFDocument {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.PDFPage > canvas {
+    max-width: 100%;
+    height: auto !important;
+}
+  
+ 
+  
+
+}

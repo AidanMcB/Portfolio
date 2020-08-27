@@ -17,7 +17,7 @@ export default function Education(){
         <Item.Group className="education-container">
             <Header as="h2">Education</Header>
             <Item>
-                <Item.Image size='tiny' src={FIlogo} />
+                <Item.Image  className="fi-logo" size='tiny' src={FIlogo} />
                 <Item.Content>
                 <Item.Header as="h4">Flatiron School</Item.Header>
                 <Item.Description>- Houston, TX - June 2020 Software Engineering Immersive, 15 Week Program</Item.Description>

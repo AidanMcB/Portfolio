@@ -1,9 +1,9 @@
 body {
+  margin: 0;
+  padding: 0;
+  height: 100% !important;
   width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
@@ -13,9 +13,31 @@ body {
   html{
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll; 
+    
+  }
+
+  .main{
+    background-color:rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100vh;
+    margin:0;
+    text-align: center;  
+  }
+  .app{
+    text-align: center;
+    background-image: url('./assets/coffeeCode.jpg');
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .router{
+    height: 100%;
   }
   
   code {
@@ -28,7 +50,7 @@ div.navbar-Menu{
 }
   /* Main Page */
   .home-page{
-  
+
   }
   .footer-links{
     margin-top: -1em;
@@ -49,16 +71,13 @@ div.navbar-Menu{
     text-align: center;
     padding: 30px;
   }
-  
-  .main{
-    /* background-color:rgba(0,0,0,0.8); */
-    width:100%;
-    height: 100%;
-    background-image: url('./assets/coffeeCode.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+
  .hi-header{
+    color: rgba(255,255,255,0.85) !important;
+    font-weight: 700;
+    text-align:center;
+  }
+  .hi-header2{
     color: rgba(255,255,255,0.85) !important;
     font-weight: 700;
     text-align:center;
@@ -77,16 +96,17 @@ div.navbar-Menu{
     border-radius: 25px;
     height: 100%;
     width: 80%;
+   
   }
   .about-me{
-    padding: 30px;
+    padding: 1em;
     border-radius: 25px;
     border: 1px solid black;
     box-shadow: 5px 5px;
     background-color: rgba(255,255,255,0.65);
-    width: 60%;
+    width: 70%;
     display: inline-block;
-    margin: 0px;
+    margin-top: -1em;
     line-height: 1.6;
     font-size: 18px;
     vertical-align: top;
@@ -155,37 +175,28 @@ div.navbar-Menu{
 .projects-page{
     height: 100vh;
     width: 100%;
+    margin: 0 auto;
+}
+.projects-grid{
     text-align: center;
     display: flex;
     justify-content: space-around;
-}
-.projects-grid{
-  text-align: center;
+ 
 }
 .projects-header{
     color: rgba(255,255,255,0.85) !important;
     font-weight: 700;
     text-align:center;
 }
-.weather-app-div{
-    background-color: rgba(255,255,255,0.65);
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    border-radius: 150px;
-    padding: 20px;
-    height: 250px;
-    width: 250px;
-}
-.weather-app-card{
-    align-items:center;
-    border-radius: 30px;
-    padding: 20px;
-   
+
+.weather-app-card, .dd-dice-card, .todays-meal-card{
+  
 }
 /* Resume */
-.resume-page{
-  height: 130vh;
+html, body, .app, .app>.resume-page{
+  height: 100%;
+  margin: 0 auto;
+  background-size:cover; 
   /* display: flex;
   align-items: center; */
 }
@@ -193,32 +204,37 @@ div.navbar-Menu{
 .software-container,
  .methodologies-container,
   .softskills-container{
-  padding: 20px;
+  padding: 1.5em;
   border-radius: 25px;
   border: 1px solid black;
   box-shadow: 5px 5px;
   background-color: rgba(255,255,255,0.65);
   width: 100%;
   display: inline-block;
-  margin: 20px;
+  margin:4em;
   line-height: 1.6;
   font-size: 14px;
   vertical-align: top;
 }
 .education-container,
 .employment-container{
-  padding: 20px;
+  padding: 1.5em;
   border-radius: 25px;
   border: 1px solid black;
   box-shadow: 5px 5px;
   background-color: rgba(255,255,255,0.65);
   width: 100%;
+  height:100%;
   /* display: inline-block; */
   /* margin: 20px; */
   line-height: 1.6;
-  font-size: 14px;
+  font-size: 1em;
   /* vertical-align: top; */
 
+}
+.resume-doc{
+  display:none;
+  visibility: hidden; 
 }
 
 
