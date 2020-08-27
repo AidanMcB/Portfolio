@@ -49,14 +49,25 @@
       text-align: center;
       padding: 30px;
     }
+
+  img.bg{
+    /* Set rules to fill background */
+min-height: 100%;
+min-width: 1024px;
+
+/* Set up proportionate scaling */
+width: 100%;
+height: auto;
+
+/* Set up positioning */
+position: fixed;
+top: 0;
+left: 0;
+z-index: -5;
+}
     .app{
         text-align: center;
-        background-image: url('./assets/coffeeCode.jpg');
-        position: fixed;
-        min-width:100%;
-        min-height:100%;
-        background-size: cover;
-        background-position: center;
+       
       }
     .main{
       /* background-color:rgba(0,0,0,0.8); */

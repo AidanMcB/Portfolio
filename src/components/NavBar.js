@@ -14,7 +14,8 @@ export default function NavBar() {
     const history = useHistory()
 
     return (
-        <Segment inverted>
+        <Segment style={{marginTop:"-.5em"}}
+        inverted >
             <Menu inverted secondary className="navbar-Menu" >
                 <Menu.Item as='a' onClick={() => history.push('/')}>Home</Menu.Item>
                 <Menu.Item as='a' onClick={() => history.push('/resume')}>Resume</Menu.Item>

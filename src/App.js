@@ -5,6 +5,7 @@ import './App.css';
 import './semantic.css';
 import './mobile.css'
 import 'semantic-ui-css/semantic.min.css'
+import BGimage from './assets/coffeeCode.jpg'
 // Components
 import HomePage from './components/HomePage'
 // -NavBar
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <div className="app">
+    <img className="bg" src={BGimage} />
       <BrowserRouter className="router">
         <NavBar className="navBar" />
         <Route exact path="/" component={HomePage} />
