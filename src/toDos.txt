@@ -1,4 +1,4 @@
-*** Center grid in projects page 
+*** PAGE VISIBILITY API
 *** Add more projects
 *** Consider resizing home page 
 *** Consider switching Navbar to sticky?
