@@ -13,7 +13,6 @@ import NavBar from './components/NavBar'
 import Resume from './components/Resume/Resume'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
-import bgImage from './assets/coffeeCode.jpg'
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
