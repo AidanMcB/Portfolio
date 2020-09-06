@@ -3,6 +3,7 @@ import React from 'react';
 import weatherAppImg from '../assets/mosi-knife.jpg'
 import ddBG from '../assets/d&dbackground.jpg'
 import todaysMealImg from '../assets/todays-meal.png'
+import reactCalc from '../assets/react-calc.png'
 // Styles 
 import {
     Grid,
@@ -67,9 +68,24 @@ export default function Projects() {
                     </Grid.Column>
                 </Grid.Row>
                 {/* Three per row, start next row here */}
+                <Grid.Row only="computer" columns={3}>
+                <Grid.Column mobile={8} computer={4}>
+                        <Card className="react-calc-card" onClick={() => window.location = "https://react-calc-mcb.netlify.app/"}>
+                            <Image src={reactCalc} wrapped></Image>
+                            <Card.Content>
+                                <Card.Header>React Calculator App</Card.Header>
+                                <Card.Meta>React.js, CSS</Card.Meta>
+                                <Card.Description>
+                                Perform basic calculator functions on a responsive React built calcuator. Built with mobile first in mind.
+                                </Card.Description>
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+                </Grid.Row>
             </Grid>
 
             {/* Mobile Projects Display */}
+
             <Grid columns='equal' style={{ align: "center", margin: "0 auto" }}
                 className="projects-grid" >
                 <Grid.Row only="mobile tablet mobile" columns={2}>
@@ -105,14 +121,21 @@ export default function Projects() {
                             <Card.Content>
                                 <Card.Header>Today's Meal</Card.Header>
                                 <Card.Meta>Ruby on Rails, CSS</Card.Meta>
-                                {/* <Card.Description>
-                            Browse delicious recipes online to spice up your cooking repertoire. Create your own profile and upload your own recipes to share with the world!
-                        </Card.Description>                  */}
                             </Card.Content>
                         </Card>
                     </Grid.Column>
+                <Grid.Column mobile={8} computer={4}>
+                        <Card className="react-calc-card" onClick={() => window.location = "https://react-calc-mcb.netlify.app/"}>
+                            <Image src={reactCalc} wrapped></Image>
+                            <Card.Content>
+                                <Card.Header>React Calculator App</Card.Header>
+                                <Card.Meta>React.js, CSS</Card.Meta>
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+                <Grid.Row>
                 </Grid.Row>
-                {/* Three per row, start next row here */}
+                </Grid.Row>
             </Grid>
         </Container>
     )
