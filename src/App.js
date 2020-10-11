@@ -22,7 +22,7 @@ function App() {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth)
     }
-    window.addEventListener('resizee', handleWindowResize)
+    window.addEventListener('resize', handleWindowResize)
     return () => {
       window.removeEventListener('resize', handleWindowResize)
     }
@@ -31,13 +31,11 @@ function App() {
   return (
     <div className="app">
     <img className="bg" src={BGimage} />
-      <BrowserRouter basename="/" className="router">
         <NavBar className="navBar" />
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/resume" component={Resume} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/projects" component={Projects} />
-      </BrowserRouter>
+        <HomePage />
+        <Resume />
+        <Contact />
+        <Projects />
     </div>
   );
 }
