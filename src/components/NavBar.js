@@ -1,10 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {useHistory} from 'react-router-dom'
 // Styles 
 import {
-    Header,
-    Container,
-    Button,
     Segment,
     Menu
 } from 'semantic-ui-react'
@@ -17,10 +14,10 @@ export default function NavBar() {
         <Segment style={{marginTop:"-.5em"}}
         inverted >
             <Menu inverted secondary className="navbar-Menu" >
-                <Menu.Item as='a' onClick={() => history.push('/')}>Home</Menu.Item>
-                <Menu.Item as='a' onClick={() => history.push('/resume')}>Resume</Menu.Item>
-                <Menu.Item as='a' onClick={()=> history.push('/projects')}>Projects</Menu.Item>
-                <Menu.Item as='a' onClick={() => history.push('/contact')}>Contact</Menu.Item>
+                <Menu.Item as='a' href="#homePage" >Home</Menu.Item>
+                <Menu.Item as='a' href="#resume">Resume</Menu.Item>
+                <Menu.Item as='a' href="#projects">Projects</Menu.Item>
+                <Menu.Item as='a' href="#contact" >Contact</Menu.Item>
             </Menu>
         </Segment>
     )

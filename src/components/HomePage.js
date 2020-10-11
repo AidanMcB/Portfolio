@@ -1,31 +1,19 @@
 import React from 'react';
-import { render } from 'react-dom';
 // Images
 import ProfPic from '../assets/profile-pic.jpeg'
-import BGimage from '../assets/coffeeCode.jpg'
-// Components 
-import NavBar from './NavBar'
-import Footer from './Footer'
+
 // Styles
 import {
-    Button,
     Container,
-    Divider,
-    Grid,
     Header,
     Icon,
     Image,
-    List,
-    Menu,
-    Segment,
-    Sidebar,
-    Visibility,
 } from 'semantic-ui-react'
 
 export default function HomePage() {
 
     return (
-        <Container className="home-page">
+        <Container id="homePage" className="home-page">
             <Header style={{
                 marginTop: "0.75em",
                 textShadow:"2px 2px black",

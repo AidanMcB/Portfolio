@@ -1,14 +1,9 @@
-import React,{ useEffect, useRef, createRef } from 'react';
+import React from 'react';
 // Components
-import Footer from './Footer'
 // Styles 
 import {
-    Reveal,
     Container,
-    Segment,
     Header,
-    Button,
-    Label,
     Icon,
     Popup
 } from 'semantic-ui-react';
@@ -16,7 +11,7 @@ import {
 export default function Contact() {
 
     return (
-        <Container className="contact-page">
+        <Container id="contact" className="contact-page">
             <div className="contact-header">
                 <Header style={{
                     color:"white",
