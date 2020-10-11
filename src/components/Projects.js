@@ -9,17 +9,14 @@ import {
     Grid,
     Card,
     Image,
-    Icon,
     Container,
     Header,
-    Segment,
-    Button
 } from 'semantic-ui-react';
 
 export default function Projects() {
 
     return (
-        <Container style={{ align: "Center", margin: "0 auto" }}
+        <Container id="projects" style={{ align: "Center", margin: "0 auto" }}
             className="projects-page">
             <Header style={{
                 marginTop: "0.75em",
