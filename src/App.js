@@ -22,7 +22,7 @@ function App() {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth)
     }
-    window.addEventListener('resizee', handleWindowResize)
+    window.addEventListener('resize', handleWindowResize)
     return () => {
       window.removeEventListener('resize', handleWindowResize)
     }
