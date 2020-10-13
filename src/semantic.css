@@ -113,7 +113,7 @@ body {
     border: 1px solid black;
     box-shadow: 5px 5px;
     background-color: rgba(255,255,255,0.65);
-    width: 70%;
+    width: 80%;
     display: inline-block;
     margin-top: -1em;
     line-height: 1.6;
@@ -158,7 +158,7 @@ body {
   .contact-div{
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 10px;
     margin: 40px;
   }
   .email-div, .phone-div, .linkedin-div{
@@ -166,9 +166,10 @@ body {
     display: flex;
     justify-content: center;
     align-items:center;
-    border-radius: 150px;
-    padding: 20px;
-    height: 250px;
+    margin: 10px;
+    border-radius: 200px;
+    padding: 10px;
+    height: 200px;
     width: 250px;
   }
   .L-icon{
