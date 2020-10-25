@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
 // Styles
 import './App.css';
 import './semantic.css';
@@ -13,6 +12,7 @@ import NavBar from './components/NavBar'
 import Resume from './components/Resume/Resume'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
+import Footer from './components/Footer'
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
@@ -33,9 +33,10 @@ function App() {
     <img className="bg" src={BGimage} />
         <NavBar className="navBar" />
         <HomePage />
-        <Resume />
-        <Contact />
         <Projects />
+        <Contact />
+        <Resume />
+        <Footer />
     </div>
   );
 }

@@ -1,11 +1,8 @@
 import React from 'react';
 // Styles
 import {
-    Container,
     Header,
     Item,
-    Image,
-    ItemExtra
 } from 'semantic-ui-react';
 // Images
 import FIlogo from '../../assets/flatiron-school-logo.png'

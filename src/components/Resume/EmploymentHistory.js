@@ -5,7 +5,6 @@ import {
     Container,
     Header,
     Icon,
-    Item,
     List,
 } from 'semantic-ui-react';
 
@@ -33,7 +32,7 @@ export default function EmploymentHistory() {
                     onClick={cpClick}>
                     <Icon name="dropdown" />
                     Cedar Post Farm Market
-                    <p style={{ fontWeight: "400" }}>Lakehurst, New Jersey- Manager (May 2009, December 2019) </p>
+                    <p style={{ fontWeight: "400" }}>Lakehurst, New Jersey - Manager (May 2009, December 2019) </p>
                 </Accordion.Title>
                 <Accordion.Content active={cp}>
                     <List bulleted className="cp-list">
@@ -51,14 +50,14 @@ export default function EmploymentHistory() {
                     exlusive={"false"}
                     onClick={kerbeyClick}>
                     <Icon name="dropdown" />
-                    Kerbey Lane
-                    <p style={{fontWeight:"400"}}>Austin, Texas - Server (June 2017 - August 2017)</p>
+                    Recovey Advisor
+                    <p style={{fontWeight:"400"}}>Remote - React Developer (September 2020 - current)</p>
                 </Accordion.Title>
                     <Accordion.Content active={kerbey}>
                         <List bulleted className="kerbey-list">
-                            <List.Item>Communication, time management, and organizational skills</List.Item>
-                            <List.Item>Customer service in a fast paced environment maintaining professionalism </List.Item>
-                            <List.Item>Built a strong connection with fellow employees and employers</List.Item>
+                            <List.Item>React based UI with Material Core styling </List.Item>
+                            <List.Item>Github workflow, trello board task management, weekly sprint meetings</List.Item>
+                            <List.Item>Work one on one with senior developers in pair programming</List.Item>
                         </List>
                     </Accordion.Content>
             </Accordion>
@@ -69,14 +68,14 @@ export default function EmploymentHistory() {
                     exlusive={"false"}
                     onClick={mtmsClick}>
                     <Icon name="dropdown" />
-                    Manchester Board of Education
-                    <p style={{fontWeight:"400"}}>Manchester, New Jersey - Facilities Manager (January 2019 - September 2019)</p>
+                    Your Journey
+                    <p style={{fontWeight:"400"}}> Remote - Lead Developer, Freelance, (September 2020 - current)</p>
                 </Accordion.Title>
                     <Accordion.Content active={mtms}>
                         <List bulleted className="mtms-list">
-                            <List.Item>Ability to prioritize and manage multi-functional tasks </List.Item>
-                            <List.Item>Contact with personnel within the district as well as vendors </List.Item>
-                            <List.Item>Work effectively under pressure, and against strict time constraints </List.Item>
+                            <List.Item>React based web application for a personalized website</List.Item>
+                            <List.Item>Work directly with client to meet their needs</List.Item>
+                            <List.Item>Designed logo with Figma art tool, handle email with MailGun</List.Item>
                         </List>
                     </Accordion.Content>
             </Accordion>

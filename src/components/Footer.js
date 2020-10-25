@@ -1,8 +1,10 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
+import myResume from '../assets/myResume.pdf'
 // Styles
 import {
-    Button
+    Container,
+    Icon
 } from 'semantic-ui-react'
 
 export default function Footer() {
@@ -11,11 +13,12 @@ export default function Footer() {
 
     return (
         <div className="footer">
-            <div className="footer-list">
-                <Button onClick={() => window.location="https://github.com/AidanMcB"} >GitHub</Button>
-                <Button onClick={() => window.location="https://www.youtube.com/channel/UCO5m40AxTx4AuitZQGx3Q4w?" }>YouTube</Button>
-                <Button onClick={() => window.location="https://medium.com/@aidankmcbride" }>Blog</Button>
-            </div>
+            <Container className="footer-links">
+                <Icon onClick={() => window.location = 'https://github.com/AidanMcB'} className="github-icon" name="github" size="huge" />
+                <Icon onClick={() => window.location = "https://www.youtube.com/channel/UCO5m40AxTx4AuitZQGx3Q4w/videos?"} className="youtube-icon" name="youtube" size="huge" color="red" />
+                <Icon onClick={() => window.location = "https://medium.com/@aidankmcbride"} className="medium-icon" name="medium" size="huge" />
+                <div className="resume-link-div"><a className="resume-link" href={myResume} download>Download my resume</a></div>
+            </Container>
         </div>
     )
 }
