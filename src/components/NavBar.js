@@ -1,5 +1,4 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom'
 // Styles 
 import {
     Segment,
@@ -7,8 +6,6 @@ import {
 } from 'semantic-ui-react'
 
 export default function NavBar() {
-
-    const history = useHistory()
 
     return (
         <Segment style={{marginTop:"-.5em"}}

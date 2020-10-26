@@ -61,6 +61,10 @@ body {
   .home-page{
 
   }
+  a.intro-blog-link{
+    color: black !important;
+    text-decoration: underline !important;
+  }
   
   .align-pic-about{
     text-align: center;
@@ -133,7 +137,7 @@ body {
   .yt-menu-item,
   .md-menu-item,
   .dl-menu-item{
-    text-align: center !important
+    text-align: center !important;
   }
   .github-icon,
   .youtube-icon,
@@ -161,7 +165,8 @@ body {
   
   /* Contact Page */
   .contact-page{
-    height: 100vh;
+    /* height: 100vh; */
+    margin: 100px 0 0 0;
   }
   .contact-header{
     text-align: center;

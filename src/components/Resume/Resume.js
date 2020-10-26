@@ -13,6 +13,7 @@ import Employment from './EmploymentHistory'
 import {
     Container,
     Grid,
+    Header,
 } from 'semantic-ui-react'
 
 export default function Resume() {
@@ -37,6 +38,12 @@ export default function Resume() {
 
     return (
         <Container id="resume" className="resume-page">
+             <Header style={{
+                    color:"white",
+                    marginTop:"40px",
+                    textShadow:"2px 2px black",
+                    fontSize: "32px"
+                }} as="h1">Resume</Header>
             <MediaQuery minDeviceWidth={1224} device={isDesktopOrLaptop}>
                 <Grid className="res-grid" columns={2}>
                     <Grid.Row

@@ -32,7 +32,7 @@ export default function Projects() {
                             <Image src={weatherAppImg} wrapped></Image>
                             <Card.Content >
                                 <Card.Header>React Weather App</Card.Header>
-                                <Card.Meta>React.js, CSS</Card.Meta>
+                                <Card.Meta>React, CSS</Card.Meta>
                                 <Card.Description>
                                     A simple react app to tell the weathere. Enter your zip code to see today's forecast for your area. Built using the Open Weather API.
                         </Card.Description>
@@ -66,14 +66,38 @@ export default function Projects() {
                 </Grid.Row>
                 {/* Three per row, start next row here */}
                 <Grid.Row only="computer" columns={3}>
-                <Grid.Column mobile={8} computer={4}>
+                    <Grid.Column mobile={8} computer={4}>
                         <Card className="react-calc-card" onClick={() => window.location = "https://react-calc-mcb.netlify.app/"}>
                             <Image src={reactCalc} wrapped></Image>
                             <Card.Content>
                                 <Card.Header>React Calculator App</Card.Header>
-                                <Card.Meta>React.js, CSS</Card.Meta>
+                                <Card.Meta>React, CSS</Card.Meta>
                                 <Card.Description>
-                                Perform basic calculator functions on a responsive React built calcuator. Built with mobile first in mind.
+                                    Perform basic calculator functions on a responsive React built calcuator. Built with mobile first in mind.
+                                </Card.Description>
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+                    <Grid.Column mobile={8} computer={4}>
+                        <Card className="sketch-up-card" onClick={() => window.location = "https://react-calc-mcb.netlify.app/"}>
+                            <iframe title="sketch-up" src="https://www.youtube.com/embed/f-m9pAdYQAw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            <Card.Content>
+                                <Card.Header>Sketch Up</Card.Header>
+                                <Card.Meta>React, Ruby on Rails, Semantic UI React</Card.Meta>
+                                <Card.Description>
+                                    Upload and edit or draw your own pictures to save and share with friends
+                                </Card.Description>
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+                    <Grid.Column mobile={8} computer={4}>
+                        <Card className="react-calc-card" onClick={() => window.location = "https://react-calc-mcb.netlify.app/"}>
+                            <iframe title="backyard-garden" src="https://www.youtube.com/embed/f7GtvgvfekU" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            <Card.Content>
+                                <Card.Header>Backyard Garden</Card.Header>
+                                <Card.Meta>React, Redux, Ruby on Rails, Semantic UI React, CSS</Card.Meta>
+                                <Card.Description>
+                                    Track the growth of the crops in your garden, share pictures and posts, and see weather updates
                                 </Card.Description>
                             </Card.Content>
                         </Card>
@@ -91,7 +115,7 @@ export default function Projects() {
                             <Image src={weatherAppImg} wrapped></Image>
                             <Card.Content >
                                 <Card.Header>React Weather App</Card.Header>
-                                <Card.Meta>React.js, CSS</Card.Meta>
+                                <Card.Meta>React, CSS</Card.Meta>
                                 {/* <Card.Description>
                             A simple react app to tell the weathere. Enter your zip code to see today's forecast for your area. Built using the Open Weather API.
                         </Card.Description> */}
@@ -106,12 +130,12 @@ export default function Projects() {
                                 <Card.Meta>HTML, CSS, JavaScript</Card.Meta>
                                 {/* <Card.Description>
                             Roll six different types of dice or convert any of the currencies coinciding with the popular board game, Dungeons and Dragons. Includes a simple calculator.
-                        </Card.Description>                  */}
+                        </Card.Description>  */}
                             </Card.Content>
                         </Card>
                     </Grid.Column>
                 </Grid.Row>
-                <Grid.Row only="mobile tablet mobile">
+                <Grid.Row only="mobile tablet mobile" columns={2}>
                     <Grid.Column mobile={8} computer={4}>
                         <Card className="todays-meal-card" onClick={() => window.location = "https://todays-meal.herokuapp.com/"}>
                             <Image src={todaysMealImg} wrapped></Image>
@@ -121,17 +145,44 @@ export default function Projects() {
                             </Card.Content>
                         </Card>
                     </Grid.Column>
-                <Grid.Column mobile={8} computer={4}>
+                    <Grid.Column mobile={8} computer={4}>
                         <Card className="react-calc-card" onClick={() => window.location = "https://react-calc-mcb.netlify.app/"}>
                             <Image src={reactCalc} wrapped></Image>
                             <Card.Content>
-                                <Card.Header>React Calculator App</Card.Header>
-                                <Card.Meta>React.js, CSS</Card.Meta>
+                                <Card.Header>React Calculator</Card.Header>
+                                <Card.Meta>React, CSS</Card.Meta>
                             </Card.Content>
                         </Card>
                     </Grid.Column>
-                <Grid.Row>
                 </Grid.Row>
+                <Grid.Row only="mobile tablet mobile" columns={2}>
+                    <Grid.Column mobile={8} computer={4}>
+                        <Card className="sketch-up-card" onClick={() => window.location = "https://react-calc-mcb.netlify.app/"}>
+                            <iframe title="sketch-up-mobile" src="https://www.youtube.com/embed/f-m9pAdYQAw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            <Card.Content>
+                                <Card.Header>Sketch Up</Card.Header>
+                                <Card.Meta>React, Ruby on Rails, Semantic UI React</Card.Meta>
+                                {/* <Card.Description>
+                                Upload and edit or draw your own pictures to save and share with friends
+                                </Card.Description> */}
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+                    <Grid.Column mobile={8} computer={4}>
+                        <Card className="react-calc-card" onClick={() => window.location = "https://react-calc-mcb.netlify.app/"}>
+                            <iframe title="backyard-garden-mobile" src="https://www.youtube.com/embed/f7GtvgvfekU" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            <Card.Content>
+                                <Card.Header>Backyard Garden</Card.Header>
+                                <Card.Meta>React, Redux, Ruby on Rails, Semantic UI React, CSS</Card.Meta>
+                                {/* <Card.Description>
+                                Track the growth of the crops in your garden, share pictures and posts, and see weather updates
+                                </Card.Description> */}
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+                    <Grid.Row>
+
+                    </Grid.Row>
                 </Grid.Row>
             </Grid>
         </Container>
