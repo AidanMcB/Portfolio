@@ -121,12 +121,31 @@ z-index: -5;
       position: relative;
       left: 0;
       right: 0;   
-      bottom: 2em;  
+      margin: 0;
+      bottom: 0.5em;
+      height: 100%;  
       width: 100%;
     }
     .footer-list{
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+    }
+    .footer-links{
+      text-align: center;
+    }
+    .gh-menu-item,
+    .yt-menu-item,
+    .md-menu-item,
+    .dl-menu-item{
+      text-align: center !important;
+    }
+    .github-icon,
+    .youtube-icon,
+    .medium-icon, 
+    .resume-icon{
+      padding: 0px;
+      display:flex;
+      margin: auto !important;
     }
     .footer-list li{
   
@@ -142,7 +161,8 @@ z-index: -5;
     
     /* Contact Page */
     .contact-page{
-      height: 100vh;
+      margin-top: 80px;
+      height: 100%;
     }
     .contact-header{
         text-align: center;
@@ -232,6 +252,9 @@ z-index: -5;
 .PDFPage > canvas {
     max-width: 100%;
     height: auto !important;
+}
+.resume-link-div{
+  margin-top: -140px;
 }
   
  

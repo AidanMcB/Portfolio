@@ -61,21 +61,11 @@ body {
   .home-page{
 
   }
-  .footer-links{
-    margin-top: -1em;
-    text-align: center;
+  a.intro-blog-link{
+    color: black !important;
+    text-decoration: underline !important;
   }
-  .github-icon,
-  .youtube-icon,
-  .medium-icon{
-    display:flex;
-    padding-bottom: 1.5em;
-  }
-  .github-icon:hover,
-  .youtube-icon:hover,
-  .medium-icon:hover{
-    cursor: pointer;
-  }
+  
   .align-pic-about{
     text-align: center;
     padding: 30px;
@@ -126,15 +116,40 @@ body {
     text-decoration: none !important
   }
   .footer{
+    background-color: "gray";
     position: relative;
+    display: flex;
+    justify-content: center;
+    top: 1.5em;
     left: 0;
-    right: 0;   
-    bottom: 2em;  
+    right: 0;  
+    bottom: 0.5em; 
     width: 100%;
   }
   .footer-list{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .footer-links{
+    text-align: center;
+  }
+  .gh-menu-item,
+  .yt-menu-item,
+  .md-menu-item,
+  .dl-menu-item{
+    text-align: center !important;
+  }
+  .github-icon,
+  .youtube-icon,
+  .medium-icon, 
+  .resume-icon{
+    display:flex;
+    margin: auto !important;
+  }
+  .github-icon:hover,
+  .youtube-icon:hover,
+  .medium-icon:hover{
+    cursor: pointer;
   }
   .footer-list li{
 
@@ -150,7 +165,8 @@ body {
   
   /* Contact Page */
   .contact-page{
-    height: 100vh;
+    /* height: 100vh; */
+    margin: 100px 0 0 0;
   }
   .contact-header{
     text-align: center;
@@ -246,11 +262,7 @@ html, body, .app, .app>.resume-page{
   display:none;
   visibility: hidden; 
 }
-.resume-link{
-  text-align:center;
-  color:white;
-  font-size:2em;
-}
+
 .resume-container{
   margin:auto;
   width: 65%;

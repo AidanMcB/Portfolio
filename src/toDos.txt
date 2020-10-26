@@ -1,3 +1,8 @@
+*** SAP To Do ***
+- change resume text 
+- update resume file 
+- make sure "download" resume option isn't covered 
+
 *** PAGE VISIBILITY API
 *** Add more projects
 *** Consider resizing home page 
