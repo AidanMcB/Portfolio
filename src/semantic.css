@@ -114,6 +114,8 @@ body {
   .footer{
     background-color: "gray";
     position: relative;
+    display: flex;
+    justify-content: center;
     top: 1.5em;
     left: 0;
     right: 0;  
@@ -122,15 +124,23 @@ body {
   }
   .footer-list{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
   .footer-links{
     text-align: center;
   }
+  .gh-menu-item,
+  .yt-menu-item,
+  .md-menu-item,
+  .dl-menu-item{
+    text-align: center !important
+  }
   .github-icon,
   .youtube-icon,
-  .medium-icon{
+  .medium-icon, 
+  .resume-icon{
     display:flex;
+    margin: auto !important;
   }
   .github-icon:hover,
   .youtube-icon:hover,
