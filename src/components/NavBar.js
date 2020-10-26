@@ -8,7 +8,7 @@ import {
 export default function NavBar() {
 
     return (
-        <Segment style={{marginTop:"-.5em"}}
+        <Segment style={{marginTop:"-.5em"}} className="nav-bar"
         inverted >
             <Menu inverted secondary className="navbar-Menu" >
                 <Menu.Item as='a' href="#homePage" >Home</Menu.Item>

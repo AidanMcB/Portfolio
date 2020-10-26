@@ -41,6 +41,9 @@ body {
     text-align: center; 
     
   }
+  .main-body{
+    margin-top:100px;
+  }
   .app{
     text-align: center;
     /* Full height */
@@ -56,7 +59,16 @@ body {
       monospace;
   }
   /* Navbar */
-
+.nav-bar{
+  position: absolute !important;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  overflow: hidden;
+}
+#contact, #resume, #projects{
+  padding-top: 30px;
+}
   /* Main Page */
   .home-page{
 
