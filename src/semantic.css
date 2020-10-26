@@ -178,7 +178,7 @@ body {
   /* Contact Page */
   .contact-page{
     /* height: 100vh; */
-    margin: 100px 0 0 0;
+    margin: 150px 0 0 0;
   }
   .contact-header{
     text-align: center;
@@ -227,8 +227,9 @@ body {
     text-align:center;
 }
 
-.weather-app-card, .dd-dice-card, .todays-meal-card{
-  
+.weather-app-card, .dd-dice-card, .todays-meal-card,
+.sketch-up-card,.backyard-garden-card{
+  height: 100%;
 }
 /* Resume */
 html, body, .app, .app>.resume-page{
