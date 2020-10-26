@@ -61,21 +61,7 @@ body {
   .home-page{
 
   }
-  .footer-links{
-    margin-top: -1em;
-    text-align: center;
-  }
-  .github-icon,
-  .youtube-icon,
-  .medium-icon{
-    display:flex;
-    padding-bottom: 1.5em;
-  }
-  .github-icon:hover,
-  .youtube-icon:hover,
-  .medium-icon:hover{
-    cursor: pointer;
-  }
+  
   .align-pic-about{
     text-align: center;
     padding: 30px;
@@ -126,15 +112,30 @@ body {
     text-decoration: none !important
   }
   .footer{
+    background-color: "gray";
     position: relative;
+    top: 1.5em;
     left: 0;
-    right: 0;   
-    bottom: 2em;  
+    right: 0;  
+    bottom: 0.5em; 
     width: 100%;
   }
   .footer-list{
     display: flex;
     justify-content: space-around;
+  }
+  .footer-links{
+    text-align: center;
+  }
+  .github-icon,
+  .youtube-icon,
+  .medium-icon{
+    display:flex;
+  }
+  .github-icon:hover,
+  .youtube-icon:hover,
+  .medium-icon:hover{
+    cursor: pointer;
   }
   .footer-list li{
 
@@ -246,11 +247,7 @@ html, body, .app, .app>.resume-page{
   display:none;
   visibility: hidden; 
 }
-.resume-link{
-  text-align:center;
-  color:white;
-  font-size:2em;
-}
+
 .resume-container{
   margin:auto;
   width: 65%;
