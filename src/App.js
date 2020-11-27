@@ -32,11 +32,13 @@ function App() {
     <div className="app">
     <img className="bg" src={BGimage} />
         <NavBar className="navBar" />
+        <div className="main-body">
         <HomePage />
         <Projects />
         <Contact />
         <Resume />
         <Footer />
+        </div>
     </div>
   );
 }

@@ -91,7 +91,7 @@ export default function Projects() {
                         </Card>
                     </Grid.Column>
                     <Grid.Column mobile={8} computer={4}>
-                        <Card className="react-calc-card" onClick={() => window.location = "https://react-calc-mcb.netlify.app/"}>
+                        <Card className="backyard-garden-card" onClick={() => window.location = "https://react-calc-mcb.netlify.app/"}>
                             <iframe title="backyard-garden" src="https://www.youtube.com/embed/f7GtvgvfekU" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                             <Card.Content>
                                 <Card.Header>Backyard Garden</Card.Header>

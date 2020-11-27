@@ -41,6 +41,9 @@ body {
     text-align: center; 
     
   }
+  .main-body{
+    margin-top:100px;
+  }
   .app{
     text-align: center;
     /* Full height */
@@ -56,7 +59,16 @@ body {
       monospace;
   }
   /* Navbar */
-
+.nav-bar{
+  position: absolute !important;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  overflow: hidden;
+}
+#contact, #resume, #projects{
+  /* padding-top: 30px; */
+}
   /* Main Page */
   .home-page{
 
@@ -166,7 +178,7 @@ body {
   /* Contact Page */
   .contact-page{
     /* height: 100vh; */
-    margin: 100px 0 0 0;
+    margin: auto;
   }
   .contact-header{
     text-align: center;
@@ -183,10 +195,10 @@ body {
     justify-content: center;
     align-items:center;
     margin: 10px;
-    border-radius: 200px;
+    border-radius: 50vw;
     padding: 10px;
     height: 200px;
-    width: 250px;
+    width: 200px;
   }
   .L-icon{
     color: rgb(0,114,177);
@@ -199,7 +211,6 @@ body {
   }
   /* Projects Page */
 .projects-page{
-    height: 100vh;
     width: 100%;
     margin: 0 auto;
 }
@@ -215,8 +226,9 @@ body {
     text-align:center;
 }
 
-.weather-app-card, .dd-dice-card, .todays-meal-card{
-  
+.weather-app-card, .dd-dice-card, .todays-meal-card,
+.sketch-up-card,.backyard-garden-card{
+  height: 100%;
 }
 /* Resume */
 html, body, .app, .app>.resume-page{
@@ -261,6 +273,9 @@ html, body, .app, .app>.resume-page{
 .resume-doc{
   display:none;
   visibility: hidden; 
+}
+.react-pdf__Page__canvas{
+  margin: auto;
 }
 
 .resume-container{
